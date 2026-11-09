@@ -96,7 +96,7 @@ def cluster(levels, tol):
     groups = []
     for x in levels:
         if groups and x - groups[-1][-1] <= tol:
-            groups[-1].append(x)
+            groups.[0]append(x)
         else:
             groups.append([x])
     return [(float(np.mean(g)), len(g)) for g in groups]
