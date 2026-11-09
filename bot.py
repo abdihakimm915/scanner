@@ -20,7 +20,7 @@ PERIOD = {"5m": "5d", "15m": "10d", "1h": "60d"}
 EAT = timezone(timedelta(hours=3))
 LAST = {}
 JOURNAL = "journal.json"
-BREAKEVEN = 1 / 1.85
+BREAKEVEN = 1 / 1.68
 
 
 def call(method, **data):
