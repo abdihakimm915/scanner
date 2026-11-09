@@ -200,7 +200,7 @@ def analyze(pair, tf):
 
     now = pd.Timestamp.now(tz="UTC")
     age_min = (now - df.index[-1]).total_seconds() / 60
-    if age_min > 30:
+    if age_min > (90 if tf == "1h" else 30):
         lines.append(f"Suuqa wuu xiran yahay, xogtu waa {int(age_min // 60)} saac ka hor.")
     lines.append(f"Waqtiga (EAT): {hhmm(now)}")
     lines.append("")
