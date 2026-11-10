@@ -56,7 +56,7 @@ def read_photo(file_id):
                 f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent",
                 headers={"x-goog-api-key": API_KEY},
                 json=body,
-                timeout=90,
+                timeout=40,
             )
             if r.status_code == 200:
                 parts = r.json()["candidates"][0]["content"]["parts"]
