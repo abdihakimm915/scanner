@@ -22,7 +22,7 @@ LAST = {}
 JOURNAL = "journal.json"
 BREAKEVEN = 1 / 1.68
 API_KEY = os.environ.get("API_KEY", "")
-MODELS = ["gemini-2.5-flash", "gemini-flash-latest"]
+MODELS = ["gemini-2.5-flash-lite", "gemini-2.0-flash", "gemini-2.5-flash"]
 PROMPT = (
     "Waxaad tahay kaaliye akhriya chart-ka forex. Sawirkan waa screenshot chart candlestick ah. "
     "Ku jawaab AF SOOMAALI, gaaban (ugu badnaan 10 sadar). Qaab: "
