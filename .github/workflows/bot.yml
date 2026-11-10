@@ -24,6 +24,7 @@ jobs:
       - run: python bot.py
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          TG_CHAT: ${{ secrets.TG_CHAT }}
           API_KEY: ${{ secrets.API_KEY }}
       - name: Save stats
         if: always()
